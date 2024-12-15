@@ -9,7 +9,7 @@ body{
     background: url("/img/4k-landscape-purple-sunset-flower-8hyy4sc6qf6j5735.jpg");
     background-size: cover;
     background-position: center;
-    min-height:100dvh ;
+    min-height:100vh ;
     display: flex;
     align-items: center;
     justify-content:center ;
@@ -77,7 +77,8 @@ h1{
     border: none;
     border-radius: 10px;
     font-weight: 600;
-    margin-top: 24px;
+    margin-top: 5px;
+    
     cursor: pointer;
     outline: none;
     font-size: 16px;
