@@ -6,14 +6,13 @@
 
 }
 body{
-    background: url("/img/4k-landscape-purple-sunset-flower-8hyy4sc6qf6j5735.jpg");
+    background: url("img/paisegem\ register.jpg");
     background-size: cover;
     background-position: center;
-    min-height:100vh ;
+    min-height:100dvh ;
     display: flex;
     align-items: center;
     justify-content:center ;
-    
 }
 .container{
  width: 420px;
@@ -22,6 +21,7 @@ body{
  backdrop-filter:blur(5px);
  border-radius: 10px;
  padding: 30px 40px;
+ box-shadow: 5px 5px 25px 5px rgba(255,255,255, .2) ;
 }
 h1{
  font-size: 36px;
@@ -40,10 +40,10 @@ h1{
     background:transparent;
     border: none;
     outline: none;
-    border: 2px solid;
+    border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     font-size: 16px;
-    color:rgba(255,255,255, .2);
+    color:white;
     padding: 20px 45px 20px 20px; 
 }
 .login input::placeholder{
