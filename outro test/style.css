@@ -217,10 +217,6 @@ label {
   outline: 0;
 }
 
-input::selection {
-  background: var(--selection);
-}
-
 button:is(:focus-visible, :hover) {
   --active: 1;
 }
@@ -241,49 +237,6 @@ button svg {
   white-space: nowrap;
   border-width: 0;
 }
-
-#source-link {
-  top: 120px;
-}
-
-#source-link>i {
-  color: rgb(94, 106, 210);
-}
-
-#yt-link {
-  top: 65px;
-}
-
-#yt-link>i {
-  color: rgb(219, 31, 106);
-}
-
-#Fund-link {
-  top: 10px;
-}
-
-#Fund-link>i {
-  color: rgb(255, 251, 0);
-}
-
-.meta-link {
-  align-items: center;
-  backdrop-filter: blur(3px);
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 6px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  display: inline-flex;
-  gap: 5px;
-  left: 10px;
-  padding: 10px 20px;
-  position: fixed;
-  text-decoration: none;
-  transition: background-color 600ms, border-color 600ms;
-  z-index: 10000;
-}
-
 .meta-link:hover {
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -301,23 +254,44 @@ button svg {
   transition: color 600ms;
 }
 .eye {
-  transition: transform 0.2s;
+  transform-origin: center;
+  transition: transform 0.2s ease;
 }
 
-.lid--upper,
-.lid--lower {
-  transition: d 0.125s;
+.lid {
+  transition: d 0.075s ease;
 }
 
-button svg {
-  overflow: visible;
+.button1 svg {
+  width: 40px;
+  height: 40px;
+  overflow: visible; /* Importante para permitir que o olho se mova além dos limites do SVG */
 }
 
-/* Adicione estas classes para controlar a visibilidade do olho */
-.eye--hidden {
-  visibility: hidden;
+.eye-group {
+  transform-origin: center;
 }
 
-.eye--visible {
-  visibility: visible;
+/* Ajuste do botão */
+.button1 {
+  padding: 0;
+  display: grid;
+  place-items: center;
+  height: 100%;
+  aspect-ratio: 1;
+  border-radius: 12px;
+  border: 0;
+  background: transparent;
+  color: var(--color-alpha);
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  top: 50%;
+  cursor: pointer;
+  translate: 0 -50%;
+  outline: 0;
+}
+
+.button1:hover {
+  color: var(--color);
 }
