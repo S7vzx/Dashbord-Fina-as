@@ -1,129 +1,144 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing:border-box;
-    font-family: "Montserrat", serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", serif;
+}
 
+body {
+  background: url('/login/img/cabana.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-body{
-    background: url('/login/img/cabana.jpg');
-    background-size: cover;
-    background-position: center;
-    min-height:100dvh ;
-    display: flex;
-    align-items: center;
-    justify-content:center ;
-    
+
+.container {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  padding: 30px 40px;
 }
-.container{
- width: 420px;
- background: transparent;
- border: 2px solid rgba(255,255,255, .2);
- backdrop-filter:blur(5px);
- border-radius: 10px;
- padding: 30px 40px;
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  color: white;
 }
-h1{
- font-size: 36px;
- text-align: center;
- color: white;
+
+.login {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
 }
-.login{
-    position: relative;
-    width: 100%;
-    height: 50px;
-    margin:30px 0;
+
+.login input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid;
+  border-radius: 10px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, .2);
+  padding: 20px 45px 20px 20px;
 }
-.login input{
-    width: 100%;
-    height: 100%;
-    background:transparent;
-    border: none;
-    outline: none;
-    border: 2px solid;
-    border-radius: 10px;
-    font-size: 16px;
-    color:rgba(255,255,255, .2);
-    padding: 20px 45px 20px 20px; 
+
+.login input::placeholder {
+  color: white;
 }
-.login input::placeholder{
-    color: white;
+
+.user {
+  position: absolute;
+  right: 24px;
+  top: 20%;
+  margin-top: 5px;
 }
-.user{ position: absolute;
-    right: 24px;
-    top:20%;
-    margin-top: 5px;
+
+.password {
+  position: absolute;
+  right: 24px;
+  top: 20%;
+  margin-top: 5px;
 }
-.password{
-    position: absolute;
-    right: 24px;
-    top:20%;
-    margin-top: 5px;
-}
+
 .login a {
-    font-size: 16px;
-    text-decoration: none;
-    color: white;
-    margin-top: 10px; 
-    display: inline-block; 
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  margin-top: 10px;
+  display: inline-block;
 }
-.login a:hover{
-    text-decoration: underline;
+
+.login a:hover {
+  text-decoration: underline;
 }
-.button{
-    width: 100%;
-    height: 50px;
-    background-color:#34fcaf ;
-    border: none;
-    border-radius: 10px;
-    font-weight: 600;
-    margin-top: 24px;
-    cursor: pointer;
-    outline: none;
-    font-size: 16px;
+
+.button {
+  width: 100%;
+  height: 50px;
+  background-color: #34fcaf;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-top: 24px;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
 }
-.button:hover{
-    background-color:#a7ffdd;
+
+.button:hover {
+  background-color: #a7ffdd;
 }
+
 .register {
-    text-align: center;
-    margin: 20px 0 0 0 ;
+  text-align: center;
+  margin: 20px 0 0 0;
+}
 
-   }
-.register p{
- color: white;
- font-size: 16px;
- font-weight: 300px;
+.register p {
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
 }
-.register a{
-    color: white;
-    font-size: 16px;
-    font-weight: 500px;
-    text-decoration: none;
-}
-.register a:hover{
-    text-decoration: underline;
 
+.register a {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
 }
+
+.register a:hover {
+  text-decoration: underline;
+}
+
 :root {
-    --grid-offset: calc(50% + 80px);
-    --color: hsl(0, 0%, 100%);
-    --bg: #000;
-    --color-alpha: rgb(153, 153, 153);
-    --selection: hsl(0 0% 80%);
-    --bg-size: 180px;
-    --grid-line: hsl(0 0% 80%);
-    --input-bg: hsl(0 0% 100% / 0.2);
-    --grid-accent: hsl(280 0% 10% / 0.1);
-    --glint: white;
-    --button-shade: 80%;
-  }
-  :root:focus-within {
-    --grid-accent: hsl(280 0% 10% / 0.35);
-  }
+  --grid-offset: calc(50% + 80px);
+  --color: hsl(0, 0%, 100%);
+  --bg: #000;
+  --color-alpha: rgb(153, 153, 153);
+  --selection: hsl(0 0% 80%);
+  --bg-size: 180px;
+  --grid-line: hsl(0 0% 80%);
+  --input-bg: hsl(0 0% 100% / 0.2);
+  --grid-accent: hsl(280 0% 10% / 0.1);
+  --glint: white;
+  --button-shade: 80%;
+}
 
-  @media(prefers-color-scheme: dark) {
-    :root {
+:root:focus-within {
+  --grid-accent: hsl(280 0% 10% / 0.35);
+}
+
+@media(prefers-color-scheme: dark) {
+  :root {
       --button-shade: 30%;
       --glint: black;
       --grid-accent: hsl(280 0% 80% / 0.1);
@@ -133,171 +148,176 @@ h1{
       --color-alpha: hsl(0 0% 50%);
       --grid-line: hsl(0 0% 12%);
       --input-bg: hsl(0 0% 0% / 0.2);
-    }
+  }
 
-    :root:focus-within {
+  :root:focus-within {
       --grid-accent: hsl(280 0% 80% / 0.35);
-    }
   }
-  *,
-  *:after,
-  *:before {
-    box-sizing: border-box;
-  }
-
-
-
-
-  body::before {
-    content: "";
-    transition: background 0.2s;
-
-    position: fixed;
-    inset: 0;
-    height: 100vh;
-    width: 100vw;
-    -webkit-mask: radial-gradient(circle at 0% 0%, hsl(0 0% 100% / 0.5), transparent);
-  }
-
-  .login:focus-within label {
-    color: var(--color);
-  }
-
-  .login:focus-within input {
-    border-color: var(--color);
-    color: var(--color);
-  }
-
-  .login:focus-within button {
-    color: var(--color);
-  }
-  input{
-    width: 100%;
-    height: 100%;
-    background:transparent;
-    border: none;
-    outline: none;
-    border: 2px solid;
-    border-radius: 10px;
-    font-size: 16px;
-    color:rgba(255,255,255, .2);
-    padding: 20px 45px 20px 20px; 
 }
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body::before {
+  content: "";
+  transition: background 0.2s;
+  position: fixed;
+  inset: 0;
+  height: 100vh;
+  width: 100vw;
+  -webkit-mask: radial-gradient(circle at 0% 0%, hsl(0 0% 100% / 0.5), transparent);
+}
+
+.login:focus-within label {
+  color: var(--color);
+}
+
+.login:focus-within input {
+  border-color: var(--color);
+  color: var(--color);
+}
+
+.login:focus-within button {
+  color: var(--color);
+}
+
 label {
-    position: absolute;
-    color: var(--color-alpha);
-    bottom: calc(100% + 0.5rem);
-    letter-spacing: 0.2ch;
-    transition: color 0.2s;
-  }
-.login{
-    position: relative;
+  position: absolute;
+  color: var(--color-alpha);
+  bottom: calc(100% + 0.5rem);
+  letter-spacing: 0.2ch;
+  transition: color 0.2s;
 }
+
 .eye circle:nth-of-type(2) {
-    fill: var(--glint);
-  }
+  fill: var(--glint);
+}
 
- .button1{
-    padding: 0;
-    display: grid;
-    place-items: center;
-    height: 100%;
-    aspect-ratio: 1;
-    border-radius: 12px;
-    border: 0;
-    background: linear-gradient(hsl(0 0% var(--button-shade) / calc(var(--active, 0) * 0.5)), hsl(0 0% var(--button-shade) / calc(var(--active, 0) * 0.5))) padding-box;
-    border: 6px solid transparent;
-    transition: background 0.125s;
-    color: var(--color-alpha);
-    position: absolute;
-    right: 0;
-    z-index: 2;
-    top: 50%;
-    cursor: pointer;
-    translate: 0 -50%;
-    outline: 0;
-  }
-  input::selection {
-    background: var(--selection);
-  }
+.button1 {
+  padding: 0;
+  display: grid;
+  place-items: center;
+  height: 100%;
+  aspect-ratio: 1;
+  border-radius: 12px;
+  border: 0;
+  background: linear-gradient(hsl(0 0% var(--button-shade) / calc(var(--active, 0) * 0.5)), hsl(0 0% var(--button-shade) / calc(var(--active, 0) * 0.5))) padding-box;
+  border: 6px solid transparent;
+  transition: background 0.125s;
+  color: var(--color-alpha);
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  top: 50%;
+  cursor: pointer;
+  translate: 0 -50%;
+  outline: 0;
+}
 
-  button:is(:focus-visible, :hover) {
-    --active: 1;
-  }
+input::selection {
+  background: var(--selection);
+}
 
-  button svg {
-    width: 40px;
-    background: none;
-  }
+button:is(:focus-visible, :hover) {
+  --active: 1;
+}
 
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
-  }
-  #source-link {
-    top: 120px;
+button svg {
+  width: 40px;
+  background: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+#source-link {
+  top: 120px;
 }
 
 #source-link>i {
-    color: rgb(94, 106, 210);
+  color: rgb(94, 106, 210);
 }
 
 #yt-link {
-    top: 65px;
+  top: 65px;
 }
 
 #yt-link>i {
-    color: rgb(219, 31, 106);
-
+  color: rgb(219, 31, 106);
 }
 
 #Fund-link {
-    top: 10px;
+  top: 10px;
 }
 
 #Fund-link>i {
-    color: rgb(255, 251, 0);
-
+  color: rgb(255, 251, 0);
 }
 
 .meta-link {
-    align-items: center;
-    backdrop-filter: blur(3px);
-    background-color: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 6px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    display: inline-flex;
-    gap: 5px;
-    left: 10px;
-    padding: 10px 20px;
-    position: fixed;
-    text-decoration: none;
-    transition: background-color 600ms, border-color 600ms;
-    z-index: 10000;
+  align-items: center;
+  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: inline-flex;
+  gap: 5px;
+  left: 10px;
+  padding: 10px 20px;
+  position: fixed;
+  text-decoration: none;
+  transition: background-color 600ms, border-color 600ms;
+  z-index: 10000;
 }
 
 .meta-link:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .meta-link>i,
 .meta-link>span {
-    height: 20px;
-    line-height: 20px;
+  height: 20px;
+  line-height: 20px;
 }
 
 .meta-link>span {
-    color: white;
-    font-family: "Rubik", sans-serif;
-    transition: color 600ms;
+  color: white;
+  font-family: "Rubik", sans-serif;
+  transition: color 600ms;
+}
+.eye {
+  transition: transform 0.2s;
+}
+
+.lid--upper,
+.lid--lower {
+  transition: d 0.125s;
+}
+
+button svg {
+  overflow: visible;
+}
+
+/* Adicione estas classes para controlar a visibilidade do olho */
+.eye--hidden {
+  visibility: hidden;
+}
+
+.eye--visible {
+  visibility: visible;
 }
